@@ -29,6 +29,10 @@ header {
 }
 header svg {
   margin: 3rem 0 2.3rem;
+  transition: transform .3s;
+}
+header svg:hover {
+  transform: scale(1.1);
 }
 header div {
   padding: 8px;
@@ -112,6 +116,10 @@ footer a {
   text-decoration: none;
   color: var(--h2-color);
   font-weight: 700;
+  transition: all .2s;
+}
+footer a:hover {
+  color: var(--bg-h1-color);
 }
 @media (min-width: 750px) {
   body {
