@@ -174,23 +174,76 @@ footer a:hover {
     width: 22rem;
     height: fit-content;
   }
+  .card:hover:nth-child(1) .description {
+    transform: scale(1.1);
+  }
+  .card:hover:nth-child(1) {
+    transform: translateY(1.5rem);
+  }
+  .card:hover:nth-child(2) {
+    transform: translateY(1.5rem);
+  }
+  .card:hover:nth-child(3) {
+    transform: translateY(1.5rem);
+  }
+  .card:hover:nth-child(4) {
+    transform: translateY(-1.5rem);
+  }
+  .card:hover:nth-child(5) {
+    transform: translateY(-1.5rem);
+  }
+  .card:hover:nth-child(6) {
+    transform: translateY(-1.5rem);
+  }
   main .card:nth-child(1) {
     grid-area: A;
+    animation: fromTop .3s .4s backwards;
   }
   main .card:nth-child(2) {
     grid-area: B;
+    animation: fromBottom .3s .7s backwards;
   }
   main .card:nth-child(3) {
     grid-area: C;
+    animation: fromTop .3s .3s backwards;
   }
   main .card:nth-child(4) {
     grid-area: D;
+    animation: fromBottom .3s .6s backwards;
   }
   main .card:nth-child(5) {
     grid-area: E;
+    animation: fromTop .3s .2s backwards;
   }
   main .card:nth-child(6) {
+    animation: fromBottom .3s .5s backwards;
     grid-area: F;
+  }
+  .card:nth-child(1) .description {
+    animation: fromBottom .3s .5s backwards;
+  }
+  .card:nth-child(2) .description {
+    animation: fromBottom .3s .8s backwards;
+  }
+  .card:nth-child(3) .description {
+    animation: fromBottom .3s .4s backwards;
+  }
+  .card:nth-child(4) .description {
+    bottom: 1.6rem;
+    top: auto;
+    animation: fromTop .3s .7s backwards;
+  }
+  .card:nth-child(5) .description {
+    bottom: 1.6rem;
+    top: auto;
+    animation: fromTop .3s .3s backwards;
+    
+  }
+  .card:nth-child(6) .description {
+    bottom: 1.6rem;
+    top: auto;
+    animation: fromTop .3s .6s backwards;
+
   }
   .card img {
     width: 100%;
